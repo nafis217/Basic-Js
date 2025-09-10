@@ -268,3 +268,128 @@
 // }, 2000);
 // console.log("end");
 
+// setTimeout(function() {
+//     console.log("i am inside settimeout function");
+// }, 3000);
+
+// Nested Functions
+// function outerFunction(x) {
+//     function innerFunction(y) {
+//         return x + y;
+//     }
+//     return innerFunction;
+// }
+// const add10 = outerFunction(10);
+// console.log(add10(5)); 
+
+//array methods
+// let arr = [1,2,3,4,5];
+// let result=arr.map((num) => {
+//     return num * 2;
+// });
+// console.log(result)
+
+// let a =[1,2,3,4,5];
+// a.push(6);
+// a.unshift("web development");
+// console.log(a);
+
+
+// const a = [1,2,3,4,5];
+// console.log("original array:" + a);
+
+// let lst=a.pop();
+// console.log("after pop:" + a);
+// console.log("popped element:" + lst);
+
+// let fst=a.shift();
+// console.log("after shift:" + a);
+// console.log("shifted element:" + fst);
+
+// a.splice(2,0,"nafis");
+// console.log("after splice:" + a);
+
+// let a =["html","css","js"];
+// let len=a.length;
+// console.log("length of array:" + len);
+
+// let a = ["HTML", "CSS", "JS"];
+// a.length = 7;
+
+// console.log(a);
+// a.length = 2;
+// console.log(a);
+
+//iterating through an array
+// let a = ["html", "css", "js", "react"];
+// for(let i = 0; i < a.length; i++){
+//     console.log(a[i]);
+// }
+
+// let a = [1,2,3,4,5];
+// let b =[6,7,8,9,10];
+// let c = a.concat(b);
+// console.log(c);
+
+// array filter
+
+// let number = [1,2,3,4,5,6,7,8,9,10];
+// var result = number.filter((currentValue,index,arr) => {
+//     return currentValue > 5;
+// });
+// console.log(result);
+
+
+// var a = [1,2,3,4,5,6,7,8,9,10];
+// var result = 0;
+// a.forEach((currentValue) => {
+//     result += currentValue * 2;
+// });
+// console.log(result);
+
+// let arr=[1,2,3,4,5];
+// let a = arr.forEach((value) => value + 2 );
+// return a;
+// console.log(a);
+
+// filter method 
+// let arr=[1,2,3,4,5];
+// let a =arr.filter((value) => value > 2);
+// console.log(a);
+
+//reduce method
+
+// let arr=[1,2,3,5,2,1];
+// let add2 = ((nafis ,safayet) => nafis + safayet);
+
+// 
+// {
+//     "friends": [
+//         {
+//             "name": "nafis",
+//             "age": 23
+//         },
+//         {
+//             "name": "safayet",
+//             "age": 24
+//         },
+//         "hobbies": [
+//             "coding",
+//             "travelling",
+//             "gaming"
+//         ]
+//     }
+//     "family": [
+//         {
+//             member1: "father",
+//             member2: "mother",
+//             member3: "sister"
+//         }
+//     ]
+//     "address": {
+//         "city": "dhaka",
+//         "country": "bangladesh"
+//     }
+// } 
+
+
