@@ -284,7 +284,7 @@
 
 //array methods
 // let arr = [1,2,3,4,5];
-// let result=arr.map((num) => {
+// let result=arr.map((num) => { 
 //     return num * 2;
 // });
 // console.log(result)
@@ -393,3 +393,166 @@
 // } 
 
 
+// myJson = `{
+// "name": "nafis",
+// "age": 23,
+// "friends": ["safayet"],
+// "family": ["father", "mother", "sister"],
+// "address": {
+//     "city": "dhaka",
+//     "country": "bangladesh"
+// }
+// }`;
+
+// Obj={ name: "nafis", age: 23, job: "developer", country:"Bangladesh" }
+// console.log(Obj);
+
+// const json = JSON.stringify(Obj);
+// console.log(json);
+
+// var javascript = { 
+//     name: "JavaScript",
+//     libraries: ["React", "Angular", "Vue"],
+//     printlibraries: function() {
+//         this.libraries.forEach((library) => {
+//             console.log(`${this.name} loves ${library}`);
+//         });
+//     }       
+// }
+// javascript.printlibraries();
+// NaN undifined 0 null false ""
+// var myNum = undefined;
+// if (myNum) {
+//     console.log("this is true");
+// }else{
+//     console.log("this is false");
+// }
+
+// ternary operator
+// var age = 2 ;
+// var type = (age >= 18) ? "adult" : (age < 10) ? "child" : "teenager";
+// console.log(type);
+
+// array.prpototype.find()
+
+// var arr = [1,2,3,4,5,6,7,8,9,10];
+// var result = arr.find((currentValue,currentIndex,array) => {
+//     return currentIndex > 2;
+// });
+// console.log(result);
+
+// findIndex
+// var arr = [1,2,3,4,5,6,7,8,9,10];
+// var result = arr.findIndex((currentValue,currentIndex,array) => {
+//     return currentValue > 6;
+// });
+// console.log(result);
+
+
+//slice method
+// var arr = [1,2,3,4,5,6,7,8,9,10];
+// var result = arr.slice(-5,-1);
+// console.log(result);
+
+//splice method
+
+// var arr = [1,2,3,4,5,6,7,8,9,10];
+// var result = arr.splice(5, 0, "nafis", "safayet");
+// console.log(arr);
+// console.log(result);
+
+// concat method
+
+// var arr = [1,2,3,4,5];
+// var arr2 = [6,7,8,9,10];
+// var result = arr.concat(arr2);
+// console.log(result);
+
+// push method 
+
+// var num = [1,2,3,4,5];
+// var result = num.push([7,8,9,10,11,12,13,14,15]);
+// console.log(num);
+
+//map method
+
+// var arr = [1,2,3,4,5];
+// var result = arr.map((val) => val*2);
+// console.log(result);
+
+// var num = [1,2,3,4,5];
+// num.push(6);
+// console.log(num);
+
+// array reduce method
+
+// var arr = [1,2,3,4,5];
+// var result = arr.reduce((previousValue,currentValue) => previousValue + currentValue
+// return result;
+// );
+// console.log(result);
+
+// var number = [1,2,3,4,5];
+// var sum = number.reduce((previousValue,currentValue) => previousValue + currentValue);
+// console.log(sum);
+
+//for loop 
+// let i = 1;
+// for (; ; i++) {
+//     if (i > 10) {
+//         break;
+//     }   
+//     console.log(i);
+// }
+
+// const arr = [1,2,3,4,5];
+// for (element in arr) {
+//     console.log(element);
+// }
+
+// var myObj = {
+//     name: "nafis",
+//     age: 23,
+//     hobby: "coding"
+// };
+
+// var keys = Object.keys(myObj);
+// var values = Object.values(myObj);
+// var entries = Object.entries(myObj);
+
+// console.log(keys);
+// console.log(values);
+// console.log(entries);
+
+// function myFunction(a = 10){
+//     return a;
+// }
+// console.log(myFunction(undefined));
+
+//spread operator
+// var numbers = [1,2,3,4,5]
+// var newNumbers = [...numbers, 6,7,8,9,10];
+// console.log(newNumbers);
+
+//  function getData(dataId){
+//     setTimeout(()=> {
+//         console.log("data id is: " + dataId);   
+//     }, 2000);
+//  }
+
+// let promise = new Promise((resolve, reject) => {
+//     console.log("promise is pending");
+//     reject(true)
+// })
+
+function getData(dataId, getNextData){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataId);
+            resolve("data fetched successfully");
+            if(getNextData){
+                getNextData();
+            }
+        }, 2000);
+    });
+}
