@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h2>Hello World</h2>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Search for a city" spellcheck="false" id="search-box"/>
+             <button id="search-btn"><img src="images/search.png" alt="Search"></button>        
+        </div>
+    <div class="weather">
+    <img src="./images/rain.png" alt="Weather" class="weather-icon">
+    <h2 id="temp">25°C</h2>
+    <h3 id="weather-description">Sunny</h3>
+    <h3 id="city">Dhaka, BD</h3>
+    <div class="details">
+        <div class="column">
+            <img src="./images/wind.png" alt="Wind">
+            <div id="wind">10 km/h</div>
+        </div>
+        <div class="column">
+            <img src="./images/humidity.png" alt="Humidity">
+            <div id="humidity">80%</div>
+        </div>
+   </div>
+</div>
 
-
-    <script src="test.js"></script>
+  <script src="data.js"> </script>
 </body>
 </html>
